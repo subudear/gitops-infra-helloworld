@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-world-deploy
+  name: helloworld-deploy
+  namespace: helloworld
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: helloworldapp
+      containers:
+      - image: 706949302588.dkr.ecr.us-east-2.amazonaws.com/test-hello-world:20210716.16
+        name: helloworldapp
