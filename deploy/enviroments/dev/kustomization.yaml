@@ -4,4 +4,4 @@ resources:
 - ../../bases
 images:
 - name: 706949302588.dkr.ecr.us-east-2.amazonaws.com/test-hello-world
-  newTag: 20210716.16
+  newTag: "20210716.16"
